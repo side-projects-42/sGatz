@@ -27,11 +27,11 @@ const Blog = () => {
   )
   return (
     <Layout>
-      <ul>
+      <ul style={{listStyle: `none`}}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
             <li key={edge.node.id}>
-               <h2>
+               <h2 style={{marginBottom: `0`}}>
                 <Link to={`/posts/${edge.node.fields.slug}/`}>
                   {edge.node.frontmatter.title}
                 </Link>
@@ -42,7 +42,7 @@ const Blog = () => {
                   {edge.node.timeToRead} min read
                 </span>
               </div>
-              <p>{edge.node.excerpt}</p>
+              <p style={{marginTop: `1em`}}>{edge.node.excerpt}</p>
               <div>
                 <Link to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
               </div>
