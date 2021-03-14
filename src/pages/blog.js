@@ -32,7 +32,7 @@ const Blog = () => {
           return (
             <li key={edge.node.id}>
                <h2>
-                <Link to={`/blog/${edge.node.fields.slug}/`}>
+                <Link to={`/posts/${edge.node.fields.slug}/`}>
                   {edge.node.frontmatter.title}
                 </Link>
               </h2>
