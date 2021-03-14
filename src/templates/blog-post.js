@@ -25,6 +25,7 @@ const BlogPost = props => {
           Posted on {props.data.markdownRemark.frontmatter.date}{" "}
           <span> / </span> {props.data.markdownRemark.timeToRead} min read
         </span>
+        <hr />
         <div
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         ></div>

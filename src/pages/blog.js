@@ -17,7 +17,7 @@ const Blog = () => {
               fields {
                 slug
               }
-              excerpt
+              excerpt(pruneLength: 50)
             }
           }
         }

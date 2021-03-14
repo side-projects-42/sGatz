@@ -2,12 +2,12 @@
 title: "Second Gatsby Blog Post"
 date: "2020-01-19"
 ---
-Seprehenderit accusamus, explicabo eligendi necessitatibus soluta! 
+If you can write one post, you can write two! 
 
-## Ipsam mollitia
+## Get Started
 
-alias temporibus dictorem ipsum dolor sit amet consectetur adipisicing elit. 
+The hardest post was the first one. Now you've got a second post, and it's smooth sailing from here. 
 
-## Excepturi maxime 
+## Keep going! 
 
-omnis earum nobis architecto, quia officiis aperiam
+What will you write next?

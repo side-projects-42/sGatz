@@ -3,12 +3,13 @@ title: "First Gatsby Blog Post"
 date: "2020-01-18"
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Put your first post here.
 
-## Excepturi maxime
+## This is a subheading
 
-reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam mollitia alias temporibus dicta
+This text is not very exciting, but it's a post! And it works! It's just text, though.
 
+Here is an ordered list: 
 1. omnis earum nobis
 2. architecto, quia
 3. officiis aperiam
