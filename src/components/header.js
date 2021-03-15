@@ -2,6 +2,24 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+const NavLink = (props) => (
+  <Link 
+    style ={{
+      color: 'lavender',
+      textDecoration: 'none'
+    }}
+    activeStyle={{
+      fontWeight: 'bold',
+      color: 'yellow'
+    }}
+
+    to={props.to}
+    >
+    {props.children}
+  </Link>
+)
+
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -34,14 +52,10 @@ const Header = ({ siteTitle }) => (
            
         }}
       >
-        <Link to="/" style={{ color: `lavender`,
-          textDecoration: `none` }}>Home</Link>{'  '}
-        <Link to="/blog/" style={{color: `lavender`,
-          textDecoration: `none`}}>Blog</Link>{'  '}
-        <Link to="/about/" style={{ color: `lavender`,
-          textDecoration: `none`}}>About</Link>{'  '}
-        <Link to="/contact/" style={{ color: `lavender`,
-          textDecoration: `none`}}>Contact</Link>
+        <NavLink activeClassName="active" to="/">Home</NavLink>{'  '}
+        <NavLink activeClassName="active" to="/blog/">Blog</NavLink>{'  '}
+        <NavLink activeClassName="active" to="/about/">About</NavLink>{'  '}
+        <NavLink activeClassName="active" to="/contact/">Contact</NavLink>
       </ul>
     </div>
   </header>
