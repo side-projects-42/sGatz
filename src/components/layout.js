@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()} Sarah Rainsberger, Built with
+          © {new Date().getFullYear()} <a href="https://www.rainsberger.ca">Sarah Rainsberger</a>, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a> on a Chromebook via <a href="https://www.codesandbox.io">CodeSandbox</a>
         </footer>
