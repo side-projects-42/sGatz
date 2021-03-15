@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `lavender`,
             textDecoration: `none`,
           }}
         >
@@ -34,13 +34,13 @@ const Header = ({ siteTitle }) => (
            
         }}
       >
-        <Link to="/" style={{
-          textDecoration: `none`}}>Home</Link>{'  '}
-        <Link to="/blog/" style={{
+        <Link to="/" style={{ color: `lavender`,
+          textDecoration: `none` }}>Home</Link>{'  '}
+        <Link to="/blog/" style={{color: `lavender`,
           textDecoration: `none`}}>Blog</Link>{'  '}
-        <Link to="/about/" style={{
+        <Link to="/about/" style={{ color: `lavender`,
           textDecoration: `none`}}>About</Link>{'  '}
-        <Link to="/contact/" style={{
+        <Link to="/contact/" style={{ color: `lavender`,
           textDecoration: `none`}}>Contact</Link>
       </ul>
     </div>

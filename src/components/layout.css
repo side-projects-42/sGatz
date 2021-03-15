@@ -58,6 +58,7 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
