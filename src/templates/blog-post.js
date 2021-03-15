@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -18,6 +18,7 @@ const BlogPost = ({data}) => {
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
+        <Link to="/blog/">Back to all posts </Link>
       </div>
     </Layout>
   )
