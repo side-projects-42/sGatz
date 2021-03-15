@@ -3,18 +3,19 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-const BlogPost = props => {
+const BlogPost = ({data}) => {
+  const post = data.markdownRemark
   return (
     <Layout>
       <div>
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+        <h1>{post.frontmatter.title}</h1>
         <span>
-          Posted on {props.data.markdownRemark.frontmatter.date}{" "}
-          <span> / </span> {props.data.markdownRemark.timeToRead} min read
+          Posted on {post.frontmatter.date}{" "}
+          <span> / </span> {post.timeToRead} min read
         </span>
         <hr />
         <div
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+          dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
       </div>
     </Layout>
