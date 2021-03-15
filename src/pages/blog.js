@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Blog = () => {
   const data = useStaticQuery(
@@ -27,6 +28,7 @@ const Blog = () => {
   )
   return (
     <Layout>
+      <SEO title="Blog Posts" />
       <ul style={{listStyle: `none`}}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
