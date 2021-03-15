@@ -44,7 +44,7 @@ const Blog = () => {
               </div>
               <p style={{marginTop: `1em`}}>{edge.node.excerpt}</p>
               <div>
-                <Link to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
+                <Link to={`/posts/${edge.node.fields.slug}/`}>Read More</Link>
               </div>
             </li>
           )
