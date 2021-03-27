@@ -21,6 +21,14 @@ module.exports = {
             }
           }
         `,
+        setup: (options) => ({
+          ...options,
+          custom_elements: [
+            {
+              'atom:link href="https://sgatz.netlify.app/rss.xml" rel="self" type="application/rss+xml"': null,
+            },
+          ],
+      }),
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
