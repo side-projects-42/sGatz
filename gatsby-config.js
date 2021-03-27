@@ -3,6 +3,7 @@ module.exports = {
     title: `sarah's Gatsby`,
     description: `sarah11918 doing Gatsby`,
     author: `@sarah11918`,
+    siteUrl: `https://sgatz.netlify.app/`,
   },
   plugins: [
     {
