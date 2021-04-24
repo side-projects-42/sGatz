@@ -96,6 +96,7 @@ module.exports = {
               linkImagesToOriginal: false,
               showCaptions: true,
               withWebp: true,
+              wrapperStyle: 'margin:15px; padding:5px; border: 2px solid black;'
             }
           },
         ]
