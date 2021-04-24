@@ -14,3 +14,7 @@ Here is an ordered list:
 2. architecto, quia
 3. officiis aperiam
 4. voluptate quaerat
+
+![Caption Text](../images/NIK_64718.JPG)
+
+![](../images/NIK_64718.JPG)
