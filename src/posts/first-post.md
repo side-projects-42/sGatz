@@ -11,4 +11,4 @@ This text is not very exciting, but it's a post! And it works! It's just text, t
 
 ![Caption Text](../images/NIK_64718.JPG)
 
-![](../images/NIK_64718.JPG alt="")
+![](../images/NIK_64718.JPG "")
