@@ -10,6 +10,7 @@ const Blog = () => {
         allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
           edges {
             node {
+              timeToRead
               frontmatter {
                 date(formatString: "DD MMMM, YYYY")
                 title
@@ -45,8 +46,9 @@ const Blog = () => {
                 </span>
               </div>
               <p style={{marginTop: `1em`}}>{edge.node.excerpt}</p>
-              <div>
-                <Link to={`/posts/${edge.node.fields.slug}/`}>Read More</Link>
+              <div style={{paddingBottom: `1em`, marginBottom: `1.5em`, fontSize: `smaller`, fontStyle: `italic`}}>
+                <Link to={`/posts/${edge.node.fields.slug}/`}> READ MORE >> </Link>
+                <hr style={{paddingBottom: `0.25em`, marginTop: `0.25em`}} />
               </div>
             </li>
           )

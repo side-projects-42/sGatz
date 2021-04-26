@@ -93,10 +93,10 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
               showCaptions: true,
               withWebp: true,
-              wrapperStyle: 'margin:15px; padding:5px; border: 2px solid black;'
+              wrapperStyle: 'padding-top:1.25em; padding-left: 0.5em; padding-right: 0.5em; text-align: center; color:#5e5c5c; background-color:#e8e8e8; font-style: italic; font-size: smaller;'
             }
           },
         ]
