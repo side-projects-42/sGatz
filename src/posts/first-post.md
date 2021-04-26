@@ -14,3 +14,19 @@ This text is not very exciting, but it's a post! And it works! It's just text, t
 ## Removed the seond photo
 
 No point in rendering it twice
+
+What if I now add code snippit?
+
+```javascript{numberLines: 5}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
