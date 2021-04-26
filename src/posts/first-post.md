@@ -9,6 +9,8 @@ Put your first post here.
 
 This text is not very exciting, but it's a post! And it works! It's just text, though.
 
-![Caption Text](../images/NIK_64718.JPG)
+![Caption Text](../images/NIK_64718.JPG "With some stuff here")
 
-![](../images/NIK_64718.JPG "")
+## Removed the seond photo
+
+No point in rendering it twice
