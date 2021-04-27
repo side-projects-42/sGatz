@@ -100,6 +100,14 @@ module.exports = {
               wrapperStyle: 'padding-top:1.25em; padding-left: 0.5em; padding-right: 0.5em; text-align: center; color:#5e5c5c; background-color:#e8e8e8; font-style: italic; font-size: smaller;'
             }
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+            },
+          },
         ]
       }
     },
