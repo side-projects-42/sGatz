@@ -34,3 +34,7 @@ plugins: [
 ```js
 console.log("Hello World");
 ```
+
+```js:title=myFile.js
+console.log("Code with a file name title")
+```
