@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <ul 
+      <nav 
         style={{ 
           listStyle: `none`, 
           float: `right`,
@@ -56,7 +56,7 @@ const Header = ({ siteTitle }) => (
         <NavLink activeClassName="active" to="/blog/">Blog</NavLink>{'  '}
         <NavLink activeClassName="active" to="/about/">About</NavLink>{'  '}
         <NavLink activeClassName="active" to="/contact/">Contact</NavLink>
-      </ul>
+      </nav>
     </div>
   </header>
 )
