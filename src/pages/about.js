@@ -7,7 +7,7 @@ const About = () => {
     <Layout>
       <SEO title="About" />
       <h1>About Page</h1>
-      <p>Sarah is exhausted.</p>
+      <p>Sarah is exhausted right now.</p>
     </Layout>
   )
 }
