@@ -1,7 +1,7 @@
 module.exports = {
-  //siteMetadata: require("./site-metadata.json"),
+  // siteMetadata: require("./site-metadata.json"),
   siteMetadata: {
-    title: `sarah's Gatsby`,
+    title: `sarah's og Gatsby`,
     description: `sarah11918 doing Gatsby`,
     author: `@sarah11918`,
     siteUrl: `https://sgatz.netlify.app/`
