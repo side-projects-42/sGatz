@@ -1,9 +1,10 @@
 module.exports = {
+  //siteMetadata: require("./site-metadata.json"),
   siteMetadata: {
     title: `sarah's Gatsby`,
     description: `sarah11918 doing Gatsby`,
     author: `@sarah11918`,
-    siteUrl: `https://sgatz.netlify.app/`,
+    siteUrl: `https://sgatz.netlify.app/`
   },
   plugins: [
     {
@@ -21,14 +22,14 @@ module.exports = {
             }
           }
         `,
-        setup: (options) => ({
+        setup: options => ({
           ...options,
           custom_elements: [
             {
-              'atom:link href="https://sgatz.netlify.app/rss.xml" rel="self" type="application/rss+xml"': null,
-            },
-          ],
-      }),
+              'atom:link href="https://sgatz.netlify.app/rss.xml" rel="self" type="application/rss+xml"': null
+            }
+          ]
+        }),
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -36,9 +37,15 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + "/posts/" + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + "/posts/" + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  url:
+                    site.siteMetadata.siteUrl +
+                    "/posts/" +
+                    edge.node.fields.slug,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    "/posts/" +
+                    edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
                 })
               })
             },
@@ -62,27 +69,27 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Sarah's Gatsby RSS Feed",
-          },
-        ],
-      },
+            title: "Sarah's Gatsby RSS Feed"
+          }
+        ]
+      }
     },
     `gatsby-plugin-react-helmet`,
-    
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "src",
-        path: `${__dirname}/src/`,
-      },
+        path: `${__dirname}/src/`
+      }
     },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -97,23 +104,24 @@ module.exports = {
               linkImagesToOriginal: true,
               showCaptions: true,
               withWebp: true,
-              wrapperStyle: 'padding-top:1.25em; padding-left: 0.5em; padding-right: 0.5em; text-align: center; color:#5e5c5c; background-color:#e8e8e8; font-style: italic; font-size: smaller;'
+              wrapperStyle:
+                "padding-top:1.25em; padding-left: 0.5em; padding-right: 0.5em; text-align: center; color:#5e5c5c; background-color:#e8e8e8; font-style: italic; font-size: smaller;"
             }
           },
           {
-            resolve: 'gatsby-remark-code-titles',
+            resolve: "gatsby-remark-code-titles",
             options: {
-              className: 'gatsby-remark-code-titles',
-            },
+              className: "gatsby-remark-code-titles"
+            }
           }, // IMPORTANT: this must be ahead of other plugins that use code blocks
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: {},
-            },
-          },
+              aliases: {}
+            }
+          }
         ]
       }
     },
@@ -128,13 +136,13 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/sgatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/sgatsby-icon.png` // This path is relative to the root of the site.
+      }
     },
- 
+
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
-  ],
+    `gatsby-plugin-offline`
+  ]
 }

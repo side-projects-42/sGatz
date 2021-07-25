@@ -1,0 +1,143 @@
+{
+  "description": "Testing, tweaking, breaking and sometimes creating tech",
+  "header": {
+    "title": "Sarah Rainsberger",
+    "tagline": "Creates and solves problems. Sometimes in that order.",
+    "background_img": "images/chromebookleaf.jpg",
+    "has_nav": true,
+    "nav_links": [
+      {
+        "label": "Home",
+        "url": "/",
+        "type": "link"
+      },
+      {
+        "label": "About",
+        "url": "/about/",
+        "type": "link"
+      },
+      {
+        "label": "My Gear",
+        "url": "/gear/",
+        "type": "link"
+      },
+      {
+        "label": "Apps I Use",
+        "url": "/apps/",
+        "type": "link",
+        "icon_class": "lorem-ipsum",
+        "new_window": false
+      },
+      {
+        "label": "Apps I Made",
+        "url": "/myapps/",
+        "type": "link",
+        "icon_class": "lorem-ipsum",
+        "new_window": false
+      },
+      {
+        "label": "Choir Tech",
+        "url": "/choirtech/",
+        "type": "link",
+        "icon_class": "",
+        "new_window": false
+      },
+      {
+        "label": "Photography",
+        "url": "/photography/",
+        "type": "link",
+        "icon_class": "",
+        "new_window": false
+      },
+      {
+        "label": "Archive",
+        "url": "/archive/",
+        "type": "link",
+        "icon_class": "lorem-ipsum",
+        "new_window": false
+      }
+    ],
+    "has_social": true,
+    "social_links": [
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/sarah11918",
+        "type": "icon",
+        "icon_class": "fa-twitter",
+        "new_window": true
+      },
+      {
+        "label": "Twitter Images",
+        "url": "https://twitter.com/search?q=%F0%9F%93%B7%20from%3Asarah11918&src=typd&f=live",
+        "type": "icon",
+        "icon_class": "fa-twitter-square",
+        "new_window": true
+      },
+      {
+        "label": "Flickr",
+        "url": "https://www.flickr.com/sarahrainsberger",
+        "type": "icon",
+        "icon_class": "fa-flickr",
+        "new_window": true
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/sarahrainsberger",
+        "type": "icon",
+        "icon_class": "fa-youtube",
+        "new_window": true
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/sarah11918",
+        "type": "icon",
+        "icon_class": "fa-github",
+        "new_window": true
+      },
+      {
+        "label": "GitLab",
+        "url": "https://www.gitlab.com/sarah11918",
+        "type": "icon",
+        "icon_class": "fa-gitlab",
+        "new_window": true
+      },
+      {
+        "label": "CodePen",
+        "url": "https://codepen.io/sarah11918",
+        "type": "icon",
+        "icon_class": "fa-codepen",
+        "new_window": true
+      },
+      {
+        "label": "RSS",
+        "url": "http://feeds.feedburner.com/sarahrainsberger",
+        "type": "link",
+        "icon_class": "",
+        "new_window": true
+      },
+      {
+        "label": "sarah@rainsberger.ca",
+        "url": "",
+        "type": "link",
+        "icon_class": "",
+        "new_window": true
+      }
+    ]
+  },
+  "footer": {
+    "content": "&copy; 2021 All rights reserved. ",
+    "links": [
+      {
+        "label": "Made with Stackbit.",
+        "url": "https://www.stackbit.com",
+        "type": "link",
+        "new_window": true
+      }
+    ]
+  },
+  "palette": "blue",
+  "title": "Sarah's Gatsby",
+
+  "author": "@sarah11918",
+  "siteUrl": "https://sgatz.netlify.app/"
+}
